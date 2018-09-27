@@ -13,8 +13,10 @@ flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-mail = "*"
 flask-login = "*"
+pylint = "*"
 
 [dev-packages]
+pylint = "*"
 
 [requires]
 python_version = "3.6"

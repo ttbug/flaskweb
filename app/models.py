@@ -1,13 +1,13 @@
 from app import db
 
 class Tag(db.Model):
-    __table__ = 'tags'
+    __tablename__ = 'tags'
     id = db.Column(db.Integer, primary_key=True)
     tag = db.Column(db.String(64), unique=True)
     posts = db.relationship('Post', backref='tag')
 
 class Post(db.Model):
-    __table__ = 'posts'
+    __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(64), unique=True, index=True)
     content = db.Column(db.Text)
